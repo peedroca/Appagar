@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appagar.Android", "Appagar.Android\Appagar.Android.csproj", "{C2B361F6-BD73-416E-8A49-C23F9A55360E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appagar", "Appagar\Appagar.csproj", "{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B361F6-BD73-416E-8A49-C23F9A55360E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B361F6-BD73-416E-8A49-C23F9A55360E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B361F6-BD73-416E-8A49-C23F9A55360E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C2B361F6-BD73-416E-8A49-C23F9A55360E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B361F6-BD73-416E-8A49-C23F9A55360E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B361F6-BD73-416E-8A49-C23F9A55360E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B97B90F-2AB0-4842-93B2-B8AF476FEAA2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FC6A8D0-34B9-4DDE-A1B7-579BF2BF3638}
+	EndGlobalSection
+EndGlobal
