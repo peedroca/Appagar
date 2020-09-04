@@ -11,12 +11,16 @@ using Xamarin.Forms.Xaml;
 namespace Appagar.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterTabbedPage : TabbedPage
+    public partial class BillsPage : ContentPage
     {
-        public MasterTabbedPage()
+        public BillsPage()
         {
             InitializeComponent();
-            BindingContext = new BillViewModel();
+        }
+
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

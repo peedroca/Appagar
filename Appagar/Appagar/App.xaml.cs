@@ -1,4 +1,5 @@
-﻿using Appagar.Views;
+﻿using Appagar.ViewModels;
+using Appagar.Views;
 using SQLite;
 using System;
 using System.IO;
@@ -13,11 +14,16 @@ namespace Appagar
         /// </summary>
         public static SQLiteConnection SQLiteConnection { get; private set; }
 
+        public static AppViewModel AppViewModel { get; set; }
+
         public App()
         {
             InitializeComponent();
             SQLiteConnection = new SQLiteConnection(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
                 , "appagar.db3"));
+
+            AppViewModel = new AppViewModel();
+            BindingContext = AppViewModel;
 
             MainPage = new MasterTabbedPage();
         }

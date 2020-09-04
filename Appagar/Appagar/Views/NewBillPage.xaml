@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Appagar.Views.NewBillPage"
              Title="Novo"
-             Background="Lightgreen">
+             Background="#b1cf5f">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
             <Frame HorizontalOptions="CenterAndExpand"
@@ -18,22 +18,28 @@
                            TextColor="Black"/>
                     <!--Descrição-->
                     <Label StyleClass="title" Text="Descrição:" />
-                    <Entry Placeholder="descrição da conta..." />
+                    <Entry Placeholder="descrição da conta..."
+                           Text="{Binding NewBill.Description, Mode=TwoWay}" />
                     <!--Valor-->
                     <Label StyleClass="title" Text="Valor:" />
                     <Entry Placeholder="0,00"
+                           Text="{Binding NewBill.Value, Mode=TwoWay}"
+                           Keyboard="Numeric"
                            HorizontalTextAlignment="End"/>
                     <!--Mensal-->
                     <StackLayout Spacing="5"
                                  HorizontalOptions="End"
                                  Orientation="Horizontal">
-                        <Switch HorizontalOptions="End" />
+                        <Switch HorizontalOptions="End"
+                                IsToggled="{Binding NewBill.IsMonthly, Mode=TwoWay}"/>
                         <Label StyleClass="title" Text="Mensal" />
                     </StackLayout>
                     <!--Adicionar-->
                     <Button Text="Criar" 
-                            TextColor="green"
-                            BorderColor="green"
+                            TextColor="Black"
+                            BorderColor="Black"
+                            Command="{Binding ClickedButtonCommand}"
+                            CommandParameter="CreateBill"
                             BorderWidth="2"
                             Background="white" />
                 </StackLayout>

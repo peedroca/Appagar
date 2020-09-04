@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Contas"
+             x:Class="Appagar.Views.BillsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <!--Filtros-->
+            <Picker Title="Filtro" 
+                    SelectedItem="{Binding SelectedOrder}"
+                    SelectedIndexChanged="Picker_SelectedIndexChanged"
+                    ItemsSource="{Binding Orders}"/>
+
+            <ListView ItemsSource="{Binding Bills}"
+                      HasUnevenRows="True"
+                      SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView BackgroundColor="Green" WidthRequest="5" VerticalOptions="FillAndExpand" />
+                                <StackLayout HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding Description}"
+                                           TextColor="Black"
+                                           FontSize="18" />
+                                    <Label Text="{Binding Value}" 
+                                           FontSize="48"
+                                           HorizontalOptions="End" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

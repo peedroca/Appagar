@@ -29,6 +29,6 @@ namespace Appagar.Models
         /// <summary>
         /// É mensal
         /// </summary>
-        public bool IsMonthly { get; set; }
+        public bool IsMonthly { get; set; } = false;
     }
 }
