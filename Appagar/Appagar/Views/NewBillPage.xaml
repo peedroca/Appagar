@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appagar.Views.NewBillPage"
+             Title="Novo"
+             Background="Lightgreen">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Frame HorizontalOptions="CenterAndExpand"
+                   HasShadow="True"
+                   VerticalOptions="Center">
+                <StackLayout WidthRequest="300">
+                    <!--Titulo-->
+                    <Label Text="Nova conta" 
+                           FontSize="Large"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,10"
+                           TextColor="Black"/>
+                    <!--Descrição-->
+                    <Label StyleClass="title" Text="Descrição:" />
+                    <Entry Placeholder="descrição da conta..." />
+                    <!--Valor-->
+                    <Label StyleClass="title" Text="Valor:" />
+                    <Entry Placeholder="0,00"
+                           HorizontalTextAlignment="End"/>
+                    <!--Mensal-->
+                    <StackLayout Spacing="5"
+                                 HorizontalOptions="End"
+                                 Orientation="Horizontal">
+                        <Switch HorizontalOptions="End" />
+                        <Label StyleClass="title" Text="Mensal" />
+                    </StackLayout>
+                    <!--Adicionar-->
+                    <Button Text="Criar" 
+                            TextColor="green"
+                            BorderColor="green"
+                            BorderWidth="2"
+                            Background="white" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Appagar.App">
     <Application.Resources>
-
+        <Style TargetType="{x:Type Label}" Class="title">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="Medium" />
+        </Style>
     </Application.Resources>
 </Application>
