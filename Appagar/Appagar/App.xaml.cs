@@ -23,6 +23,7 @@ namespace Appagar
                 , "appagar.db3"));
 
             AppViewModel = new AppViewModel();
+            AppViewModel = new AppViewModel();
             BindingContext = AppViewModel;
 
             MainPage = new MasterTabbedPage();
